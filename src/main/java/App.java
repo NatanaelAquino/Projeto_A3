@@ -1,34 +1,32 @@
 package main.java;
-
-import java.util.Locale;
 import java.util.Scanner;
+import main.java.utils.CliUtils;
 
 public class App {
     public static void main(String[] args) throws Exception {
+
 
         Scanner sc = new Scanner(System.in);
         boolean f = true;
 
 
-        System.out.print("Registro: ");
-        int rg = sc.nextInt();
-        System.out.print("Senha: ");
-        sc.nextLine();
-        String senha = sc.nextLine();
+            while (f) {
+                CliUtils.clear();
 
-
-        if(rg == 123 && senha.equals("aa1")){
-            while (f){
                 System.out.println("Opção: ");
                 System.out.println("1 - Cadastro ");
                 System.out.println("2 - Sair ");
-
-    
-    
                 int op = sc.nextInt();
+
                 switch (op) {
                     case 1:
-                        
+
+                    CliUtils.clear();
+
+                        System.out.println("Digite seu nome: ");
+                        sc.nextLine();
+                        String name = sc.nextLine();
+
                         break;
                     case 2:
                         f = false;
@@ -36,9 +34,8 @@ public class App {
                     default:
                         break;
                 }
-    
+
             }
         }
-       
-    }
+
 }
