@@ -2,59 +2,48 @@ package main.java.entities;
 
 public class User {
 
+    private Integer codigo;
     private String name;
-    private Integer age;
-    private Integer CPF;
-    private String Office;
-    private String Sector;
-    
-    public User(String name, Integer age, Integer cPF, String office, String sector) {
-        this.name = name;
-        this.age = age;
-        CPF = cPF;
-        Office = office;
-        Sector = sector;
-    }
+    private Integer Login;
+    private String senha;
+    private String EMAIL;
+    private Integer registro;
 
+
+
+    
+    
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
-    public Integer getAge() {
-        return age;
+    public Integer getLogin() {
+        return Login;
+    }
+    public void setLogin(Integer login) {
+        Login = login;
+    }
+    public String getSenha() {
+        return senha;
+    }
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+    public String getEMAIL() {
+        return EMAIL;
+    }
+    public void setEMAIL(String eMAIL) {
+        EMAIL = eMAIL;
+    }
+    public Integer getRegistro() {
+        return registro;
+    }
+    public void setRegistro(Integer registro) {
+        this.registro = registro;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
-    }
-
-    public Integer getCPF() {
-        return CPF;
-    }
-
-    public void setCPF(Integer cPF) {
-        CPF = cPF;
-    }
-
-    public String getOffice() {
-        return Office;
-    }
-
-    public void setOffice(String office) {
-        Office = office;
-    }
-
-    public String getSector() {
-        return Sector;
-    }
-
-    public void setSector(String sector) {
-        Sector = sector;
-    }
     
 
 }
