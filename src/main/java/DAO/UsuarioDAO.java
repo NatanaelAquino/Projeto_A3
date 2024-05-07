@@ -23,8 +23,6 @@ public class UsuarioDAO {
             ps = Conexao.getConnection().prepareStatement(sql);
             
             ps.setString(1, User.getName());
-            ps.setLong(2, User.getLogin());
-
             ps.setString(3, User.getSenha());
 
             ps.setString(4, User.getEMAIL());

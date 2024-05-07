@@ -4,27 +4,24 @@ public class User {
 
     private Integer codigo;
     private String name;
-    private Integer Login;
     private String senha;
     private String EMAIL;
     private Integer registro;
-
-
-
     
-    
+    public User( String name,  String senha, String eMAIL, Integer registro) {
+        this.name = name;
+        this.senha = senha;
+        EMAIL = eMAIL;
+        this.registro = registro;
+    }
+
     public String getName() {
         return name;
     }
     public void setName(String name) {
         this.name = name;
     }
-    public Integer getLogin() {
-        return Login;
-    }
-    public void setLogin(Integer login) {
-        Login = login;
-    }
+   
     public String getSenha() {
         return senha;
     }
@@ -43,7 +40,4 @@ public class User {
     public void setRegistro(Integer registro) {
         this.registro = registro;
     }
-
-    
-
 }
