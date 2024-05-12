@@ -1,43 +1,40 @@
 package main.java.entities;
 
+import java.io.Reader;
+
 public class User {
-
-    private Integer codigo;
+    private Integer record;
     private String name;
-    private String senha;
-    private String EMAIL;
-    private Integer registro;
-    
-    public User( String name,  String senha, String eMAIL, Integer registro) {
+    private String email;
+    private String Password;
+    public User(Integer record, String name, String email, String password) {
+        this.record = record;
         this.name = name;
-        this.senha = senha;
-        EMAIL = eMAIL;
-        this.registro = registro;
+        this.email = email;
+        Password = password;
     }
-
+    public Integer getRecord() {
+        return record;
+    }
+    public void setRecord(Integer record) {
+        this.record = record;
+    }
     public String getName() {
         return name;
     }
     public void setName(String name) {
         this.name = name;
     }
-   
-    public String getSenha() {
-        return senha;
+    public String getEmail() {
+        return email;
     }
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public void setEmail(String email) {
+        this.email = email;
     }
-    public String getEMAIL() {
-        return EMAIL;
+    public String getPassword() {
+        return Password;
     }
-    public void setEMAIL(String eMAIL) {
-        EMAIL = eMAIL;
-    }
-    public Integer getRegistro() {
-        return registro;
-    }
-    public void setRegistro(Integer registro) {
-        this.registro = registro;
+    public void setPassword(String password) {
+        Password = password;
     }
 }

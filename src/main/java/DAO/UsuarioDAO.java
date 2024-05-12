@@ -20,20 +20,16 @@ public class UsuarioDAO {
 
 
         try {
+
             ps = Conexao.getConnection().prepareStatement(sql);
-            
             ps.setString(1, User.getName());
-            ps.setString(3, User.getSenha());
-
-            ps.setString(4, User.getEMAIL());
-            ps.setLong(5, User.getRegistro());
-
-
+            ps.setString(3, User.getPassword());
+            ps.setString(4, User.getEmail());
+            ps.setLong(5, User.getRecord());
             ps.execute();
             ps.close();
 
         } catch (Exception e) {
-            // TODO: handle exception
             e.printStackTrace();
         }
      
