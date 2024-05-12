@@ -1,7 +1,7 @@
 package main.java;
 import javax.swing.SwingUtilities;
 
-import main.java.GUI.TelaLogin;
+import main.java.entities.GUI.TelaLogin;
 public class App {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {

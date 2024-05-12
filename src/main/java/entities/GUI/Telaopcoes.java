@@ -1,4 +1,4 @@
-package main.java.GUI;
+package main.java.entities.GUI;
 
 import javax.swing.*;
 
